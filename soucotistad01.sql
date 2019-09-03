@@ -9,7 +9,7 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
-START TRANSACTION;
+-- START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -35,7 +35,7 @@ CREATE TABLE `building` (
   `description` varchar(255) DEFAULT NULL,
   `geo` varchar(255) DEFAULT NULL,
   `city` varchar(60) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 
 --
 -- Dumping data for table `building`
@@ -56,7 +56,7 @@ CREATE TABLE `fraction` (
   `number` int(11) NOT NULL,
   `owner` int(11) NOT NULL,
   `unit_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -70,7 +70,7 @@ CREATE TABLE `period` (
   `fraction_id` int(11) NOT NULL,
   `price` decimal(10,0) NOT NULL,
   `exchange_allowed` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -84,7 +84,7 @@ CREATE TABLE `status` (
   `text` varchar(30) NOT NULL,
   `icon` varchar(200) NOT NULL,
   `hint` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -100,7 +100,7 @@ CREATE TABLE `unity` (
   `floor` int(11) NOT NULL,
   `guests` int(11) NOT NULL,
   `building_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 
 -- --------------------------------------------------------
 
@@ -110,14 +110,14 @@ CREATE TABLE `unity` (
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `name` int(11) NOT NULL,
-  `email` int(11) NOT NULL,
-  `facebook_account` int(11) NOT NULL,
-  `google_account` int(11) NOT NULL,
-  `status_id` int(11) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `facebook_account` varchar(20) NOT NULL,
+  `google_account` varchar(20) NOT NULL,
+  `status_id` varchar(11) NOT NULL,
   `income_Chanel` int(11) NOT NULL,
-  `age` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `age` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8_general_ci;
 
 --
 -- Indexes for dumped tables
