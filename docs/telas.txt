@@ -1,0 +1,31 @@
+Telas (do sistema):
+
+Login
+Tela Principal
+Detalhes da cota
+Buscar data
+Resultado da pesquisa
+
+Login
+	Form simples, usuário e senha. Pode ser sobre uma página em branco, visto que depois usaremos o mesmo form sobre a página criada pelo designer
+
+Tela Principal
+	Lista de cotas
+	Botão para adicionar as cotas (+)
+
+Detalhes da cota
+	Lista os próximos tres anos de datas das cotas (3x6=18 datas)
+	Ao clicar no status da data, aparece os status para selecionar
+	Na frente da data tem uma opção de "gerar autorização de uso" (texto "Geral autorização" por enquanto)
+	Botão para excluir as cotas (x)
+
+Buscar data
+	Formulário de pesquisa de data, dados pre-fixados (Cidade, Empreendimento, data pre fixada de acordo com calendario de cotas)
+
+Resultado da pesquisa 
+	Lista semelhante ao da tela principal
+
+
+
+
+Além das telas do sistema, teremos uma landing page para lançamento dos empreendimentos... No começo, claro. Ou talvez não, pode ser que precisemos dar uma pressão no lançamento de cada um deles.
